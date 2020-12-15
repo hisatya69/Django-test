@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>DATA</h1>
+{#    <table border="2">#}
+{#        <thead>#}
+{#        <tr>Name</tr>#}
+{#        </thead>#}
+{#    </table>#}
+
+
+
+    {% for student in students %}
+        Name:{{ student.Name }}||
+        Roll No:{{ student.Roll_no }}||
+        DateOfJoining:{{ student.DateOfJoining}}||
+        Address:{{ student.Address}}||
+        PostalCode:{{ student.PostalCode}}<br>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>
